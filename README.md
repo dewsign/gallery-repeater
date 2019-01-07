@@ -22,4 +22,4 @@ public function types(Request $request)
 
 ## Styles
 
-You can create multiple gallery and item styles by adding new templates to the `vendor/galleries` and `vendor/items` resource folders. The system will fallback to the default style if a view is not found.
+You can create multiple gallery and item styles by adding new templates to the `/views/vendor/gallery-repeater/galleries` and `/views/vendor/gallery-repeater/items` resource folders. The system will fallback to the default style if a view is not found.
