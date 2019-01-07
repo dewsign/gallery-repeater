@@ -1,0 +1,33 @@
+{
+    "name": "dewsign/gallery-repeater",
+    "description": "A gallery repeater block for [Dewsign's Nova Repeater Blocks](https://github.com/dewsign/nova-repeater-blocks) to output a collection of images",
+    "type": "boilerplate",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marco Mark",
+            "email": "m2de@outlook.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "laravel/framework": ">=5.0.0",
+        "laravel/nova": "^1.1",
+        "dewsign/nova-repeater-blocks": "^1.1"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": ">=3.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dewsign\\GalleryRepeater\\": "src-php/"
+        }
+    },
+    "extra":{
+        "laravel": {
+            "providers": [
+                "Dewsign\\GalleryRepeater\\Providers\\PackageServiceProvider"
+            ]
+        }
+    }
+}
