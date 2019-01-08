@@ -26,11 +26,14 @@ class Item extends Model
 
     public function getDefaultImageAttribute()
     {
-        return Storage::disk(config('repeater-blocks.images.disk'))->url($this->image);
+        return $this->getImage();
     }
 
     public function getImage(array $params = [])
     {
-        return ImageProcessor::get($this->image, $params);
+        return config(
+            "gallery-repeater.{$this->style}.imageProcessor",
+            config("gallery-repeater.default.imageProcessor")
+        )::get($this->image, $params);
     }
 }
