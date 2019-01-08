@@ -2,7 +2,6 @@
 
 return [
     'default' => [
-        'width' => '500',
-        'height' => '500',
+        'imageProcessor' => Dewsign\GalleryRepeater\ImageProcessor::class,
     ],
 ];
